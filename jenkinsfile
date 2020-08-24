@@ -1,9 +1,9 @@
-  pipeline {
+pipeline {
          agent any
          stages {
                  stage('One') {
                  steps {
-                     echo 'Hi, this is Manwar Singh from CU'
+                     echo 'Hi, this is Zulaikha from edureka'
                  }
                  }
                  stage('Two') {
@@ -28,7 +28,10 @@
                                 echo "Running the unit test..."
                            }
                            }
-                            
+                            stage('Integration test') {
+                              agent {
+                                    
+                                    }
                               steps {
                                 echo "Running the integration test..."
                               }
@@ -36,3 +39,4 @@
                            }
                            }
               }
+}
